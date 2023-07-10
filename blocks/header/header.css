@@ -4,6 +4,11 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  box-shadow: 0px 3px 5px #0000000D;
+
+  @media (max-width: 768px) {
+    box-shadow: none;
+  }
 }
 
 header nav {
@@ -141,7 +146,7 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 128px;
+  flex-basis: 147px;
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
@@ -228,6 +233,7 @@ header nav .nav-sections ul > li > ul > li {
     gap: 2em;
     margin: 0;
     font-size: var(--body-font-size-xs);
+    color: #58181D;
   }
 
   header nav .nav-sections > ul > li {
@@ -276,7 +282,7 @@ header nav .nav-tools {
 
 header .announcement-wrapper {
   background-color: #A33532;
-  min-height: 40px;
+  min-height: 30px;
   
 }
 
@@ -284,9 +290,10 @@ header .announcement-wrapper p {
   max-width: 1200px;
   margin: auto;
   color: #fff;
-  font-size: 15px;
-  text-align: center;
+  font-size: 12px;
+  text-align: left;
   padding: 7px;
+  text-transform: uppercase;
 }
 
 .icon-frescopa_logo {
